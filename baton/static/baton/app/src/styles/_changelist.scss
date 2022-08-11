@@ -136,6 +136,7 @@
   }
 
   .action-counter {
+    padding-top: 20px;
     display: block;
 
     @include media-breakpoint-up(sm) {
@@ -328,6 +329,8 @@
     }
 
     .actions {
+      display: flex;
+      align-items: center;
       @extend .mb-4;
 
       label {
@@ -335,6 +338,9 @@
       }
 
       button {
+        height: 30px;
+        width: 50px;
+        margin-bottom: -20px;
         @extend .btn;
         @extend .btn-sm;
         @extend .btn-light;
@@ -363,12 +369,19 @@
     @extend .table-responsive;
     background: $changelist-bg;
     clear: both;
+    white-space: nowrap;
+    font-family: system-ui;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: -1px;
+
 
     table {
       @extend .table;
       // @extend .table-bordered; // removed with bootstrap 5.1
 
       thead > tr {
+        font-size: 17px;
         // background: $rl-head-bg; // removed with bootstrap 5.1
         color: $rl-head-color;
       }
@@ -394,6 +407,7 @@
       th,
       td {
         padding: .3rem;
+        padding-right: 15px;
       }
     }
 

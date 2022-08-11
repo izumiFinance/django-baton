@@ -3,9 +3,11 @@
 
   #content {
     background: $dashboard-bg;
+    width: 83.3333333%;
   }
 
   #content-main {
+    display: block !important;
     @include make-row();
     float: left;
     margin-left: 0 !important;
@@ -14,7 +16,7 @@
 
     @include media-breakpoint-up(lg) {
       margin-left: -15px;
-      width: 75%;
+      width: 60%;
     }
 
     > p {
@@ -23,6 +25,9 @@
     }
 
     > .module {
+      width: 100% !important;
+      padding-right: inherit !important;
+      padding-left: inherit !important;
       @include make-col-ready();
       @include make-col(12);
 
@@ -65,7 +70,7 @@
 
     @include media-breakpoint-up(lg) {
       margin-right: 25px;
-      width: 23%;
+      width: 40%;
     }
 
     h2 {
@@ -90,6 +95,8 @@
   }
 
   caption {
+    font-size: 15px !important;
+    font-weight: 600 !important;
     @extend .ps-2;
     @extend .pe-2;
     background: $dashboard-caption-bg;
@@ -97,7 +104,7 @@
     caption-side: top;
 
     a {
-      color: $dashboard-caption-color;
+      color: $dashboard-caption-color !important;
     }
   }
 
@@ -124,6 +131,7 @@
     }
 
     li {
+      padding-left: 40px !important;
       padding: 1.5rem;
       padding-top: 0;
       position: relative;
@@ -134,7 +142,7 @@
         color: $white !important;
         display: inline-block;
         height: 30px;
-        left: -18px;
+        left: 5px;
         line-height: 30px;
         position: absolute;
         text-align: center;
@@ -168,12 +176,14 @@
   }
 
   .addlink {
+    background: inherit;
     &::before {
       content: '\f067';
     }
   }
 
   .changelink {
+    background: inherit;
     &::before {
       content: '\f304';
     }
@@ -186,6 +196,7 @@
   }
 
   .viewlink {
+    background: inherit;
     &::before {
       content: '\f26c';
     }
