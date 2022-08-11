@@ -136,7 +136,8 @@
   }
 
   .action-counter {
-    padding-top: 20px;
+    padding-top: 29px;
+    margin-left: 10px;
     display: block;
 
     @include media-breakpoint-up(sm) {
@@ -151,9 +152,12 @@
     cursor: pointer;
     display: inline;
     float: right;
-    font-size: 1rem;
+    font-size: 17px;
     margin-bottom: 1rem;
     min-height: 39px;
+    letter-spacing: 0.5px;
+    background-color: #79aec8;
+    border: 0px;
 
     &.active {
       background: $accent;
@@ -179,6 +183,10 @@
       }
     }
 
+  }
+
+  .changelist-filter-toggler:hover{
+    background-color: #8dbad0
   }
 
   #changelist-filter {
@@ -335,17 +343,24 @@
 
       label {
         @extend .pe-2;
+        font-size: 18px;
       }
 
       button {
-        height: 30px;
+        height: 33px;
         width: 50px;
-        margin-bottom: -20px;
+        margin-bottom: -28px;
+        font-size: inherit;
+        background-color: #79aec8;
         @extend .btn;
         @extend .btn-sm;
         @extend .btn-light;
         @extend .ms-2;
         @extend .me-2;
+      }
+      
+      button:hover{
+        background-color: #8dbad0;
       }
 
       .all.hidden,
@@ -370,10 +385,10 @@
     background: $changelist-bg;
     clear: both;
     white-space: nowrap;
-    font-family: system-ui;
+    font-family: 'Dosis';
     font-size: 15px;
-    font-weight: 100;
-    letter-spacing: -1px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
 
 
     table {
@@ -408,6 +423,7 @@
       td {
         padding: .3rem;
         padding-right: 15px;
+        font-weight: 500;
       }
     }
 

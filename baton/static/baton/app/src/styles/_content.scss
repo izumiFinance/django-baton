@@ -28,7 +28,7 @@
     @extend .p-3;
     background: $dashboard-title-bg;
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 400;
 
     + h2,
     + .messagelist + h2 {
@@ -51,6 +51,7 @@
     }
 
     a {
+      font-size: 18px;
       background-image: none;
       @extend .btn;
       @extend .btn-secondary;
