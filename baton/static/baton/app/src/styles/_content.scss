@@ -13,7 +13,7 @@
 #content {
   background: $content-bg;
   margin-right: 0 !important;
-  padding-left: 0 !important;
+  padding-left: 30px;
   padding-right: 0 !important;
   padding-top: 0 !important;
   position: relative;
@@ -29,6 +29,7 @@
     background: $dashboard-title-bg;
     font-size: 1.6rem;
     font-weight: 400;
+    padding-left: 8px !important;
 
     + h2,
     + .messagelist + h2 {
